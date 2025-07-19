@@ -27,18 +27,18 @@ Built with:
 
 ### 1. Clone & Setup
 
-```bash
+`bash
 git clone https://github.com/YOUR_USERNAME/helptulsa.git
 cd helptulsa
-cp .env.example .env
+cp .env.example .env`
 
-2. Add Excel Input File
+### 2. Add Excel Input File
 
 Place your resource spreadsheet at:
 
 inputs/resources.xlsx
 
-3. Run Everything
+### 3. Run Everything
 
 docker compose up --build
 
@@ -50,21 +50,21 @@ This will launch:
 
     📊 Qdrant UI: http://localhost:6333/dashboard
 
-🔍 API: Semantic Search
+## 🔍 API: Semantic Search
 POST /ask
 
 Submit a natural language query and return top-k matches.
 
 Request:
 
-{
+`{
   "query": "Where can I get trauma counseling?",
   "top_k": 5
-}
+}`
 
 Response:
 
-{
+`{
   "query": "Where can I get trauma counseling?",
   "results": [
     {
@@ -77,20 +77,20 @@ Response:
       }
     }
   ]
-}
+}`
 
-💻 Frontend (React + Tailwind)
+## 💻 Frontend (React + Tailwind)
 
 Open your browser to:
 
-http://localhost:5173
+`http://localhost:5173`
 
 Type a question like:
 
 Where can I find housing for single mothers?
 
 You’ll see live, styled, scored semantic search results.
-🔄 Admin Refresh
+## 🔄 Admin Refresh
 
 Trigger re-ingestion of data:
 POST /admin/refresh
