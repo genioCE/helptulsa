@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HelpTulsa Q&A</title>
+</head>
+<body>
+  <h1>Ask HelpTulsa</h1>
+  <form action="/ask-ui" method="post">
+    <input type="text" name="query" size="50" placeholder="e.g. Where can I get housing help?" required>
+    <button type="submit">Ask</button>
+  </form>
+
+  {% if results %}
+    <h2>Top Results</h2>
+    <ul>
+      {% for item in results %}
+        <li>
+          {% if item.resource.Name %}
+            <strong>{{ item.resource.Name }}</strong><br/>
+          {% endif %}
+          {% if item.resource.services %}
+            {{ item.resource.services }}<br/>
+          {% endif %}
+          {% if item.resource.city %}
+            {{ item.resource.city }}<br/>
+          {% endif %}
+          {% if item.resource.website %}
+            <a href="{{ item.resource.website }}" target="_blank">{{ item.resource.website }}</a><br/>
+          {% endif %}
+          <em>Score: {{ item.score }}</em>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+</body>
+</html>
