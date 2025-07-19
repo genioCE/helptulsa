@@ -105,7 +105,7 @@ This runs:
 
     vector_service: Re-embeds + upserts into Qdrant
 
-🧠 Dev Notes
+## 🧠 Dev Notes
 
     Sentence embeddings powered by sentence-transformers
 
@@ -115,7 +115,7 @@ This runs:
 
     CORS configured for cross-origin access
 
-🔧 Coming Soon
+## 🔧 Coming Soon
 
     ✅ Feedback buttons (helpful / not helpful)
 
@@ -123,6 +123,6 @@ This runs:
 
     ☁️ Deployments via Railway, Render, or Vercel
 
-📄 License
+## 📄 License
 
 MIT © HelpTulsa.ai, 2025
