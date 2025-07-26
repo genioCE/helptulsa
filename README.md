@@ -1,5 +1,5 @@
  
-# HelpTulsa.ai — Semantic Microservice Stack
+# HelpTulsa — Semantic Microservice Stack
 
 HelpTulsa.ai is a minimal, container-native system for searching reentry and mental-health resources using semantic search.
 
